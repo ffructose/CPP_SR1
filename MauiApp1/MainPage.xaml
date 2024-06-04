@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            <!-- Task 1: Product of numbers divisible by 6 -->
+            <Label Text="Задача 1: На заданому проміжку чисел [a,b] знайдіть добуток чисел, кратних 6." FontSize="20" HorizontalOptions="Center" />
+            <Entry x:Name="entryA1" Placeholder="Введіть a" Keyboard="Numeric" />
+            <Entry x:Name="entryB1" Placeholder="Введіть b" Keyboard="Numeric" />
+            <Button Text="Порахувати" Clicked="CalculateMultiplesOf6Btn_Clicked" />
+            <Label x:Name="resultLabel1" FontSize="18" HorizontalOptions="Center" />
+
+            <!-- Task 2: Product of numbers in range (10, 15) -->
+            <Label Text="Задача 2: Задано три числа. Знайти добуток тих з них, які більші 10 і менші 15." FontSize="20" HorizontalOptions="Center" />
+            <Entry x:Name="entry1" Placeholder="Введіть перше число" Keyboard="Numeric" />
+            <Entry x:Name="entry2" Placeholder="Введіть друге число" Keyboard="Numeric" />
+            <Entry x:Name="entry3" Placeholder="Введіть третє число" Keyboard="Numeric" />
+            <Button Text="Порахувати" Clicked="CalculateInRangeBtn_Clicked" />
+            <Label x:Name="resultLabel2" FontSize="18" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
